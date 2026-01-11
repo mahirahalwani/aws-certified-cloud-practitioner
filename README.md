@@ -132,4 +132,8 @@ Target Exam Date: Feb 14, 2026
 - CloudFront (Content Delivery Network).<br>
 - Web Application Firewall (WAF).<br>
 
+## Shared Responsibility Model Diagram
+- Customers are responsible for the security **IN** the cloud > whatever you used and however you configure it is your responsibility that includes security, data, network and firewall configuration.<br>
+- AWS are responsible for the security **OF** the cloud > all the infrasturcture, internal security, hardware and software.<br>
+<img width="284" height="178" alt="image" src="https://github.com/user-attachments/assets/bbb3de20-7c99-413b-8b3e-2ed7679f9087" />
 
