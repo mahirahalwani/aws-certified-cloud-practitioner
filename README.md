@@ -72,7 +72,7 @@ Target Exam Date: Feb 14, 2026
   &emsp;- easy parallel with traditional on-premises IT.<br>
   &emsp;- e.g., Amazon EC2 (on AWS), GCP, Azure, Rackspace, Digital Ocean, Linode.<br>
 2. Platform as a Service (PaaS).<br>
-   &emsp;- removes the need for your organisation to manage the underlying infrastructure.<br>
+   &emsp;- removes the need for your organisation to manage the underlying infrastructure&emsp;-
    &emsp;- focus on the deployment and management of your applications.<br>
    &emsp;- e.g., Elastic Beanstalk (on AWS), Heroku, Google App Engine (GCP), Windows Azure (Microsoft).<br>
 4. Software as a Service (SaaS).<br>
@@ -86,3 +86,50 @@ Target Exam Date: Feb 14, 2026
 - Storage: pay for data stored in the Cloud.<br>
 - Data transfer OUT of the cloud: data transfer IN is free.<br>
 - Solves the expensive issue of Traditional IT.<br>
+
+## AWS Cloud Use Cases
+- AWS enables you to build sophisticated, scalable applications.<br>
+- Applicable to a diverse set of industries.<br>
+- Use cases include:<br>
+  &emsp;- enterprise IT, backup and storage, big data analytics.<br>
+  &emsp;- Website hosting, mobile and social apps.<br>
+  &emsp;- Gaming.<br>
+
+## AWS Global Infrastructure
+- AWS Regions.<br>
+- AWS Availability Zones.<br>
+- AWS Data Centers.<br>
+- AWS Edge Locations/Points of Presence.<br>
+
+## AWS Regions
+- AWS has Regions all around the world.<br>
+- Names can be us-east-1, eu-west-3....<br>
+- A region is a cluster of data centers.<br>
+- Most AWS services are region-scoped > if we use a service in one region and we try to use it in a different region, it will be like a new time of using the service.<br>
+- e.g., Amazon EC2 (IaaS), Elastic Beanstalk (PaaS), Lambda (Function as a Service), Rekognition (SaaS)
+
+## How to Choose an AWS Region?
+- If you need to launch a new application, where should you do it?<br>
+- Compliance with data governance and legal requirements: data never leaves a region without your explicit permission.<br>
+- Proximity to customers: reduced latency.<br>
+- Available services within a Region: new services and new features aren't available in every Region.<br>
+- Pricing: pricing varies region to region and is transparent in the service pricing page.<br>
+
+## AWS Availability Zones (AZ)
+- What actually are going into the region.<br>
+- Each region has many AZ (usually 3, min is 3, max is 6).<br>
+- Each AZ is one or more discrete data centers with redundant power, networking, and connectivity.<br>
+- These AZ are separate from each other, so that they are isolated from disasters.<br>
+- AZ connected with high bandwith, ultra-low latency networking.<br>
+
+## AWS Edge Locations/Points of Presence (POP)
+- Amazon has 400+ POP (400+ edge locations & 10+ regional caches) in 90+ cities across 40+ countries.<br>
+- Content is delivered to end users with lower latency.<br>
+
+## AWS has Global Services
+- Identity and Access Management (IAM).<br>
+- Route 53 (DNS Service).<br>
+- CloudFront (Content Delivery Network).<br>
+- Web Application Firewall (WAF).<br>
+
+
