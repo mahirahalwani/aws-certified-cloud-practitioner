@@ -14,7 +14,7 @@ Target Exam Date: Feb 14, 2026
   &emsp;- Network: cables, routers and servers connected with each other.<br>
   &emsp;- Router: a networking device that forwards data packet between computer networks. They know where to send your packets on the internet.<br>
   &emsp;- Switch: takes a packet and send it to the correct server/client on your network.<br>
-<img width="371" height="136" alt="image" src="https://github.com/user-attachments/assets/71c33ee5-4f37-4399-996d-6563c4b6f025" />
+<img width="371" height="136" alt="image" src="https://github.com/user-attachments/assets/71c33ee5-4f37-4399-996d-6563c4b6f025" /><br>
 - Cloud Computing: the on-demand delivery of compute power, database storage, applications, and other IT resources.<br>
 - Pros:<br>
   &emsp;- Through a cloud services platform with pay-as-you-go pricing.<br>
@@ -78,7 +78,7 @@ Target Exam Date: Feb 14, 2026
 4. Software as a Service (SaaS).<br>
    &emsp;- completed product that is run and managed by the service provider.<br>
    &emsp;- e.g., many AWS services like Rekognition for Machine Learning, Google Apps (Gmail), Dropbox, Zoom.<br>
-<img width="800" height="511" alt="image" src="https://github.com/user-attachments/assets/80057190-ea52-461f-9633-4f3070b6e90a" />
+<img width="800" height="511" alt="image" src="https://github.com/user-attachments/assets/80057190-ea52-461f-9633-4f3070b6e90a" /><br>
 
 ## Pricing of the Cloud
 - AWS has 3 pricing fundamentals, following the pay-as-you-go pricing model.<br>
