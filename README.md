@@ -137,3 +137,97 @@ Target Exam Date: Feb 14, 2026
 - AWS are responsible for the security **OF** the cloud > all the infrastructure, internal security, hardware and software.<br>
 <img width="284" height="178" alt="image" src="https://github.com/user-attachments/assets/bbb3de20-7c99-413b-8b3e-2ed7679f9087" />
 
+
+## IAM Section
+- Identity and Access Management.<br>
+- It is a **Global Service**, no region to be selected.<br>
+- In IAM we are going to create a user and groups that are available everywhere.<br>
+- Root account created by default and should not be used or shared.<br>
+- Users arepeople within your organization and can be grouped.<br>
+- Groups only contain users, not other groups.<br>
+- Users do not have to belong to a group (not the best practice).<br>
+- User can belong to multiple groups.<br>
+
+## IAM Permissions
+- Users or Groups can be assigned JSON documents called policies.<br>
+- These policies define the permissions of the users.<br>
+- We are allowing our users to use some services in AWS.<br>
+- In AWS, we do not allow everyone to do everything.<br>
+- In AWS you apply the **least privilege principle**, do not give more permissions than a user needs.<br>
+- Tags are optional, but they allow you to give metadata to many of your resources.<br>
+
+## IAM Policies Inheritance
+- a policy will be inherited by that specific group.<br>
+- Inline Policy: a policy that is attached to a user.<br>
+
+## IAM Policies Structure
+- Consists of:<br>
+  &emsp;- Version: policy language version, always included "2012-10-07".<br>
+  &emsp;- Id: an identifier for the policy (optional).<br>
+  &emsp;- Statement: one or more individual statements (optional).<br>
+- Statement consists of:<br>
+  &emsp;-Sid: an identifier for the statement (optional).<br>
+  &emsp;- Effect: whether the statement allows or denies access (Allow, Deny).<br>
+  &emsp;- Principal: account/user/role to which this policy applied to.<br>
+  &emsp;- Action: list of actions this policy allows or denies.<br>
+  &emsp;- Resource: list of resources to which the actions applied to.<br>
+  &emsp;- Condition: conditions for when this policy is in effect.<br>
+<img width="800" height="515" alt="image" src="https://github.com/user-attachments/assets/cb235b5e-5bd6-450e-9aa2-94d96c2c90c4" />
+
+## IAM Password Policy
+- Strong passwords = higher security for your account.<br>
+- In AWS, you can setup a password policy:<br>
+  &emsp;- Set a min password length.<br>
+  &emsp;- Require specific character types:<br>
+      &emsp;&emsp;- uppercase letters.<br>
+      &emsp;&emsp;- lowercase letters.<br>
+      &emsp;&emsp;- numbers.<br>
+      &emsp;&emsp;- non-alphanumeric characters.<br>
+  &emsp;- Allow all IAM users to change their own passwords.<br>
+  &emsp;- Require users to change their password after some time (password expiration).<br>
+  &emsp;- Prevent password re-use.<br>
+- A password policy is helpful against a brute-force attack.<br>
+
+## Multi Factor Authentication - MFA
+- Users have access to your account and can possibly change configurations or delete resources in your AWS account.<br>
+- You want to protect your Root Accounts and IAM users.<br>
+- MFA = password you know + security device you own
+- Main benefit: if a password is stolen or hacked, the account is not compromised.<br>
+
+## MFA Devices
+- Virtual MFA Devices:<br>
+  &emsp;- Google Authenticator (phone only), Authy (phone only) > support for multiple tokens in a single device.<br>
+  &emsp;- Universal 2nd Factor (U2F) Security Key: A physical device, YubiKey by Yubico (3rd party) > support multiple roots and IAM users using a single security key<br>
+- Hardware Key Fob MFA Device:<br>
+  &emsp;- Hardware Key Fob MFA Device, provided by Gemalto (3rd party). <br>
+  &emsp;- Hardware Key Fob MFA Device for AWS GovCloud (US), provided by SurePass (3rd party).<br>
+
+## How Users Can Access AWS?
+1. AWS Management Console (protected by password + MFA).<br>
+2. AWS Command Line Interface (CLI) (protected by access keys).<br>
+3. AWS Software Development Kit (SDK) - for code (protected by access keys).<br>
+- Access Keys are generated through the AWS Console.<br>
+- Users manage their own Access Keys.<br>
+- Access Keys are secret, do not share them.<br>
+
+## What is AWS CLI?
+- A tool that enables you to interact with AWS services using commands in your command-line shell.<br>
+- Direct access to the public APIs of AWS services.<br>
+- You can develop scripts to manage your resources.<br>
+- It is an open-source.<br>
+- Alternative to using AWS Management Console.<br>
+
+## What is AWS SDK?
+- AWS Software Development Kit (AWS SDK).<br>
+- Language-specific APIs (set of libraries).<br>
+- Enables you to access and manage AWS services programmatically.<br>
+- Embedded within your application.<br>
+- Supports:<br>
+  &emsp;- SDKs (JavaScript, Python, PHP, .NET, Ruby, Java, Go, Node.js, C++).<br>
+  &emsp;- Mobile SDKs (Android, iOS).<br>
+  &emsp;- IoT Device SDKs (Embedded C, Arduino).<br>
+
+
+
+
+
