@@ -216,6 +216,7 @@ Target Exam Date: Feb 14, 2026
 - You can develop scripts to manage your resources.<br>
 - It is an open-source.<br>
 - Alternative to using AWS Management Console.<br>
+- Cloud shell is only available in certain region.<br>
 
 ## What is AWS SDK?
 - AWS Software Development Kit (AWS SDK).<br>
@@ -227,7 +228,13 @@ Target Exam Date: Feb 14, 2026
   &emsp;- Mobile SDKs (Android, iOS).<br>
   &emsp;- IoT Device SDKs (Embedded C, Arduino).<br>
 
-
+## IAM Roles for Services
+- Some AWS service will need to perform actions on your behalf.<br>
+- To do so, we will assign permissions to AWS services with IAM Roles.<br>
+- Common Roles:<br>
+  &emsp;- EC2 Instance Roles.<br>
+  &emsp;- Lambda Function Roles.<br>
+  &emsp;- Roles for CloudFormation.<br>
 
 
 
