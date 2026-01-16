@@ -326,3 +326,11 @@ Target Exam Date: Feb 14, 2026
   &emsp;- distributed file systems.<br>
 - Example:<br>
   ![image](https://github.com/user-attachments/assets/0a01afb1-7b0c-4daf-9ee6-b6c1b222f493)
+
+
+### SECURITY GROUPS
+## Introduction to Security Groups
+- Security Groups are the fundamnetla of network security in AWS.<br>
+- They control how traffic is allowed into or out of our EC2 instances.<br>
+- Security Groups only contain allow rules.<br>
+- Security groups rules can reference by IP or by security group.<br>
