@@ -266,3 +266,63 @@ Target Exam Date: Feb 14, 2026
     &emsp;- Use IAM tools to apply appropriate permissions.<br>
     &emsp;- Analyze access patterns and review permissions.<br>
 
+
+### EC2
+## Amazon EC2
+- EC2 is one of the most popular of AWS' offering.<br>
+- EC2 = Elastic Compute Cloud = Infrastructure as a Service (IaaS).<br>
+- It mainly consists in the capability of:<br>
+  &emsp;- Renting virtual machines (EC2).<br>
+  &emsp;- Storing data on virtual drives (EBS).<br>
+  &emsp;- Distributing load across machines (ELB).<br>
+  &emsp;- Scaling the services using an auto-scaling group (ASG).<br>
+- Knowing EC2 is fundamental to understand how the Cloud works..<br>
+
+## EC2 Sizing & Configuration Options
+- OS: Linux, Windows, or Mac OS.<br>
+- How much computer power & cores (CPU).<br>
+- How much random-access memory (RAM).<br>
+- How much storgae space.<br>
+- Network card: speed of the card, public IP address.<br>
+- Firewall rules: security group.<br>
+- Bootstrap script (configure at first launch): EC2 user data
+
+## EC2 User Data
+- It is possible to bootstrap our instances using an EC2 User Data script.<br>
+- Bootstrapping: launching commands when a machine starts.<br>
+- That script is only run once at the instance first start.<br>
+- EC2 user data is used to automate boot tasks such as:<br>
+  &emsp;- installing updates.<br>
+  &emsp;- installing software.<br>
+  &emsp;- downloading common files from the internet.<br>
+- The EC2 User Data Script runs with the root user.<br>
+
+## EC2 Instance Types
+- AWS naming convention: m5.2xlarge.<br>
+  &emsp;- m: instance class.<br>
+  &emsp;- 5: generation (AWS imporves them over time).<br>
+  &emsp;- 2xlarge: size within the instance class.<br>
+- General Purpose:<br>
+  &emsp;- Greate for a diversity of workloads such as web servers or code repositories.<br>
+  &emsp;- Balance between compute, networking, memory.<br>
+  &emsp;- e.g.: t2.micro.<br>
+- Compute Optimized: great for compute-intensive tasks that require high performance processors.<br>
+  &emsp;- batch proceeding workloads.<br>
+  &emsp;- media transcoding.<br>
+  &emsp;- high performance web servers.<br>
+  &emsp;- high performance computing (HPC).<br>
+  &emsp;- scientific modeling and machine learning.<br>
+  &emsp;- dedicated gaming servers.<br>
+- Memory Optimized: fast performance for workloads that process large data sets in memory.<br>
+  &emsp;- high performance, relational/non-relational databases.<br>
+  &emsp;- distibuted web scale cache stores.<br>
+  &emsp;- in-memory databases optimized for business intelligence (BI).<br>
+  &emsp;- applications performing real-time processing of big unstructured data.<br>
+- Storage Optimized: great for storage-intenive tasks that require high, sequential read and write access to large data sets on local storage.<br>
+  &emsp;- high frequency online transaction processing (OLTP) systems.<br>
+  &emsp;- relational & NoSQL databases.<br>
+  &emsp;- cache for in-memory databases (e.g., Redis).<br>
+  &emsp;- data warehousing applications.<br>
+  &emsp;- distributed file systems.<br>
+- Example
+  ![image](https://github.com/user-attachments/assets/0a01afb1-7b0c-4daf-9ee6-b6c1b222f493)
