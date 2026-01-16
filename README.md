@@ -324,5 +324,5 @@ Target Exam Date: Feb 14, 2026
   &emsp;- cache for in-memory databases (e.g., Redis).<br>
   &emsp;- data warehousing applications.<br>
   &emsp;- distributed file systems.<br>
-- Example
+- Example:<br>
   ![image](https://github.com/user-attachments/assets/0a01afb1-7b0c-4daf-9ee6-b6c1b222f493)
