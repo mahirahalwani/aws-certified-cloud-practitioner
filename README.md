@@ -334,3 +334,32 @@ Target Exam Date: Feb 14, 2026
 - They control how traffic is allowed into or out of our EC2 instances.<br>
 - Security Groups only contain allow rules.<br>
 - Security groups rules can reference by IP or by security group.<br>
+- Security groups are acting as "firewall" on EC2 instances.<br>
+- They regulate:<br>
+  &emsp;- access to ports.<br>
+  &emsp;- authorised IP ranges - IPv4 and IPv6.<br>
+  &emsp;- control of inbound network (from other to the instance).<br>
+  &emsp;- control of outbound network (from the instance to other).<br>
+- Can be attached to multiple instances.<br>
+- Locked down to a region/VPC combination.<br>
+- Does live "outside" the EC2 - if traffic is blocked the EC2 instance will not see it.<br>
+- It is good to maintain one separate security group for SSH access.<br>
+- If your application is not accessible (time out) then it is a security group issue.<br>
+- If your application gives "connection refused" error, then it is an application error or it is not launched.<br>
+- All inbound traffic is **blocked** by default.<br>
+- All outbound traffic is **authorised** by default.<br>
+
+
+## Classic Ports
+- 22 = SSH (Secure Shell) - log into a Linux instance.<br>
+- 21 = FTP (File Transfer Protocol) - upload files unto a file share.<br>
+- 22 = SFTP (Secure File Transfer Protocol) - upload file using SSH.<br>
+- 80 = HTTP - access unsecured websites.<br>
+- 443 = HTTPS - access secured websites.<br>
+- 3389 = RDP (Remote Desktop Protocol) - log into a Windows instance.<br>
+
+## SSH Overview
+- SSH is one of the most important function.<br>
+- It allows you to control a remote machine, all using the command line.<br>
+<img width="904" height="478" alt="image" src="https://github.com/user-attachments/assets/5d6f8e37-1b01-4dfd-b348-e7a0178105c3" />
+
